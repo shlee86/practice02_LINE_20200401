@@ -1,0 +1,166 @@
+*  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 24px;
+  font-size: 12px;
+}
+
+.icon a {
+  font-size: 16px;
+  color: gray;
+}
+
+/* ドロップダウン記述 */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown_container{
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  border: solid 1px black;
+  z-index: 9999;
+}
+
+.dropdown_container > ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.dropdown_container:hover > ul{
+  height: auto;
+  border: solid 1px black;
+}
+
+.dropdown_container a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown_container a:hover {
+  color: rgb(20, 238, 20);
+}
+
+/* ドロップダウンここまで */
+
+body{
+  min-width:1200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  margin: 0 8px;
+}
+
+header img {
+  width: 60px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+hr {
+  border-width: 3px 0px 0px 0px; /* 太さ */
+  border-style: solid; /* 線種 */
+  border-color: black;   /* 線色 */
+  height: 1px;         /* 高さ(※古いIE用) */
+}
+
+.main_picture {
+  height: 440px;
+  background-image: url("../img/header.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;  margin-bottom: 120px;
+}
+
+.main_explain {
+  position: absolute;
+  top: 88px;
+  left: 200px;
+}
+
+.main_explain {
+  color: white;
+}
+
+.main_explain h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.main_explain a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  border: solid 1px white;
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 40px;
+}
+
+.content_explain {
+  display: flex;
+  flex-direction: row;
+  padding: 0 120px 120px 120px;
+}
+
+.explain {
+  padding: 36px;
+}
+
+.content_explain img {
+  width: 560px;
+  height: auto;
+}
+
+.content_explain h2 {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.content_explain p {
+  margin-bottom: 16px;
+}
+
+footer a, h6 {
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+}
+
+.footerLink {
+  height:120px;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: center;
+  padding:20px 40px;
+  text-align: center;
+}
